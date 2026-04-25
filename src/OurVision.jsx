@@ -1,5 +1,5 @@
 import style from "./OurVision.module.css"
-import OurVision from "./ProductsImages/OurVision.png";
+import Ourvision from "./ProductsImages/OurVision.png";
 
 function OurVision() {
   return (
@@ -16,7 +16,7 @@ Aane wale samay me hum apni reach ko aur badhana chahte hain, naye areas me expa
 Hum believe karte hain ki asli success sirf expansion me nahi, balki customer ke bharose me hoti hai. Isi liye hum har din better banne ki koshish karte hain, taki aapko hamesha best mile — safe, fresh aur truly pure dairy products.</p>
      </div>
      <div className={style.imgIcon}>
-      <img src={OurVision} alt="Team" />
+      <img src={Ourvision} alt="Team" />
      </div>
     </div>
   </>
