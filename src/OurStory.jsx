@@ -1,5 +1,5 @@
 import style from "./OurStory.module.css";
-import OurStory from "./ProductsImages/OurStory.png";
+import Ourstory from "./ProductsImages/OurStory.png";
 
 
 function OurStory() {
@@ -18,7 +18,7 @@ Aaj bhi hum wahi values follow karte hain — honesty, freshness aur trust. Har 
 Hum maante hain ki ek strong brand sirf products se nahi, balki relationships se banta hai. Isi liye MuharaGold sirf ek naam nahi, balki ek rishta hai jo hum apne customers ke saath har roz aur mazboot banate hain.</p>
      </div>
      <div className={style.imgIcon}>
-      <img src={OurStory} alt="Team" />
+      <img src={Ourstory} alt="Team" />
      </div>
     </div>
   </>

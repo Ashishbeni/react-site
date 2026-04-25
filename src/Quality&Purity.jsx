@@ -1,5 +1,5 @@
 import style from "./Quality&Purity.module.css";
-import Quality&Purity from "./ProductsImages/Quality&Purity.png";
+import QualityPurity from "./ProductsImages/Quality&Purity.png";
 
 function QualityAndPurity() {
   return (
@@ -19,7 +19,7 @@ Har spoon dahi ka, har bite paneer ki aur har drop doodh ka — ek hi baat refle
 Humari koshish sirf products deliver karna nahi, balki aapko ek aisa experience dena hai jahan aap bina soche samjhe hum par bharosa kar sakein — kyunki jo hum dete hain, wo bilkul waise hi hota hai jaise nature ne banaya hai.</p>
      </div>
      <div className={style.imgIcon}>
-      <img src={Quality&Purity} alt="Team" />
+      <img src={QualityPurity} alt="Team" />
      </div>
     </div>
   </>
