@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import style from"./banner.module.css";
+import HomeCoverPhoto from "./ProductsImages/HomeCoverPhoto.png"
 function Banner() {
   return (
     <>
@@ -7,7 +8,7 @@ function Banner() {
       
       {/* Full Image */}
       <img
-        src="src/ProductsImages/HomeCoverPhoto.png"
+        src={HomeCoverPhoto}
         alt="Child with cow"
         style={{ width: "100%", height: "100vh", objectFit: "cover" }}
      />
