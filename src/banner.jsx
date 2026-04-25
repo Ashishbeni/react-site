@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import style from"./banner.module.css";
-import HomeCoverPhoto from "./ProductsImages/HomeCoverPhoto.png"
+import HomeCoverPhoto from "./ProductsImages/HomeCoverPhoto.png";
+import FreeDelivery from "./ProductsImages/FreeDelivery.png";
 function Banner() {
   return (
     <>
@@ -35,7 +36,7 @@ function Banner() {
 
     </div>
 
-      <img id={style.FreeDelivery} src="src/ProductsImages/FreeDelivery.png" alt="Free Delivery" />
+      <img id={style.FreeDelivery} src={FreeDelivery} alt="Free Delivery" />
     </>
   );
 }

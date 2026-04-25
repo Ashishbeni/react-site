@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import style from "./MilkDetails.module.css";
 import Footer from "./footer";
 import { Link } from "react-router-dom";
+import Milk from "./ProductsImages/Milk.png"
 
 function MilkDetailsPage() {
   return (
@@ -10,7 +11,7 @@ function MilkDetailsPage() {
        <h2>🥛 Fresh Cow & Buffalo Milk</h2>
        <p>Muhara Gold ka shudh doodh (cow aur buffalo dono) directly farm se fresh collect karke hygienic process ke through aapke ghar tak pahunchaya jata hai. Aap apni preference ke hisaab se cow milk ya buffalo milk choose kar sakte hain. Isme koi milawat ya preservative nahi hota — sirf natural aur healthy milk.</p>
 
-       <img src="src/ProductsImages/Milk.png" alt="Milk"/><br /><br /><br /><br />
+       <img src={Milk} alt="Milk"/><br /><br /><br /><br />
 
     <div className={style.mainBox}>
       <div className={style.Box1}>

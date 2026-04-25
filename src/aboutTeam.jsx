@@ -1,4 +1,5 @@
-import style from "./aboutTeam.module.css"
+import style from "./aboutTeam.module.css";
+import FreeDelivery from "./ProductsImages/Team.png";
 
 function AboutTeam() {
   return (
@@ -23,7 +24,7 @@ MuharaGold me hum sirf dairy products nahi bechte —
 hum aapko trust serve karte hain.</p>
      </div>
      <div className={style.imgIcon}>
-      <img src="src/ProductsImages/Team.png" alt="Team" />
+      <img src={FreeDelivery} />
      </div>
     </div>
   </>

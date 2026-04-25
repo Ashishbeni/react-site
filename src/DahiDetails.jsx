@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import style from "./DahiDetails.module.css";
 import Footer from "./footer";
 import { Link } from "react-router-dom";
+import Dahi from"./ProductsImages/Dahi.png"
 
 function DahiDetails() {
  return (
@@ -10,7 +11,7 @@ function DahiDetails() {
        <h2>🥣 Fresh Dahi</h2>
        <p>Muhara Gold ka fresh dahi shudh doodh se hygienic process ke through tayyar kiya jata hai. Ye natural fermentation se bana hota hai, jo taste me creamy aur health ke liye bahut faydemand hota hai. Isme koi preservative ya chemical nahi hota — sirf natural goodness.</p>
 
-       <img src="src/ProductsImages/Dahi.png" alt="Dahi"/><br /><br /><br /><br />
+       <img src={Dahi} alt="Dahi"/><br /><br /><br /><br />
 
     <div className={style.mainBox}>
       <div className={style.Box1}>

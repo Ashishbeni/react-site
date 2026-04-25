@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import style from "./GheeDetails.module.css";
 import Footer from "./footer";
 import { Link } from "react-router-dom";
+import Ghee from"./ProductsImages/Ghee.png";
 
 function GheeDetailsPage() {
  return (
@@ -10,7 +11,7 @@ function GheeDetailsPage() {
        <h2>🧈 Pure Desi Ghee</h2>
        <p>Muhara Gold ka shudh desi ghee traditional tareeke se tayyar kiya jata hai, jisme cow aur buffalo milk dono ka use hota hai. Ye ghee bilkul natural process se banaya jata hai bina kisi chemical ya preservative ke, jisse iska asli taste aur nutrition barkarar rehta hai.</p>
 
-       <img src="src/ProductsImages/Ghee.png" alt="Ghee"/><br /><br /><br /><br />
+       <img src={Ghee} alt="Ghee"/><br /><br /><br /><br />
 
     <div className={style.mainBox}>
       <div className={style.Box1}>

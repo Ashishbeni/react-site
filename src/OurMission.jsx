@@ -1,4 +1,5 @@
-import style from "./OurMission.module.css"
+import style from "./OurMission.module.css";
+import OurMission from "./ProductsImages/OurMission.png";
 
 function OurMission() {
   return (
@@ -16,7 +17,7 @@ Isliye hum sourcing se lekar delivery tak har step par special dhyaan dete hain.
 Hum believe karte hain ki acchi health ki shuruaat clean aur pure food se hoti hai. Isi liye hamari puri team dedicated hai ki aap tak sirf best quality hi pahunchay — natural, fresh aur bilkul safe dairy products, jin par aap har roz bharosa kar sakein.</p>
      </div>
      <div className={style.imgIcon}>
-      <img src="src/ProductsImages/OurMission.png" alt="Team" />
+      <img src={OurMission} alt="Team" />
      </div>
     </div>
   </>

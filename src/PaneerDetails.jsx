@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import style from "./PaneerDetails.module.css";
 import Footer from "./footer";
 import { Link } from "react-router-dom";
+import Paneer from"./ProductsImages/Paneer.png";
 
 function PaneerDetails() {
  return (
@@ -10,7 +11,7 @@ function PaneerDetails() {
        <h2>🧀 Fresh Paneer</h2>
        <p>Muhara Gold ka fresh paneer shudh doodh se hygienic process ke through tayyar kiya jata hai. Ye soft, fresh aur high-quality paneer hai jo daily use ke liye perfect hai. Isme koi preservative ya chemical nahi hota — sirf natural taste aur nutrition.</p>
 
-       <img src="src/ProductsImages/Paneer.png" alt="Paneer"/><br /><br /><br /><br />
+       <img src={Paneer} alt="Paneer"/><br /><br /><br /><br />
 
     <div className={style.mainBox}>
       <div className={style.Box1}>
