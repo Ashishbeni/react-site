@@ -1,0 +1,60 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+
+function Footer() {
+  return (
+    <footer className="bg-dark text-light pt-5 pb-3 mt-0">
+      <div className="container">
+        <div className="row">
+
+          {/* Brand */}
+          <div className="col-md-4 mb-4">
+            <h4 className="fw-bold text-warning">MuharaGold</h4>
+            <p>
+              Fresh aur pure dairy products ke liye trusted brand.  
+              Hum aap tak quality, hygiene aur natural goodness lekar aate hain.
+            </p>
+          </div>
+
+          {/* Links */}
+          <div className="col-md-4 mb-4">
+            <h5 className="fw-semibold">Quick Links</h5>
+            <ul className="list-unstyled">
+              <li><a href="/" className="text-light text-decoration-none">Home</a></li>
+              <li><a href="/about" className="text-light text-decoration-none">About</a></li>
+              <li><a href="/products" className="text-light text-decoration-none">Products</a></li>
+              <li><a href="/contact" className="text-light text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+
+          {/* Contact + Social */}
+          <div className="col-md-4 mb-4">
+            <h5 className="fw-semibold">Contact Us</h5>
+            <p className="mb-1">📍 Hisar, Haryana</p>
+            <p className="mb-1">📞 +91 7056523602</p>
+            <p className="mb-1">📧 support@muharagold.com</p>
+
+            {/* Social Media (Simple & Working) */}
+            <div className="mt-3">
+              <a href="#" className="text-light me-3">👍 Facebook</a>
+              <a href="#" className="text-light me-3">📸 Instagram</a>
+              <a href="#" className="text-light me-3">🐦 Twitter</a>
+              <a href="#" className="text-light">💬 WhatsApp</a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <hr className="border-light" />
+
+        <div className="text-center">
+          <p className="mb-0">
+            © {new Date().getFullYear()} MuharaGold. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;
