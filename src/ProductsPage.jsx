@@ -1,7 +1,7 @@
 import Footer from "./footer";
 import style from "./ProductsPage.module.css";
 import { Link } from "react-router-dom";
-import Milk from "./ProductsImages/Milk.png"; 
+import Milk from "./ProductsImages/Milk.png";
 import Ghee from "./ProductsImages/Ghee.png"; 
 import Paneer from "./ProductsImages/Paneer.png"; 
 import Dahi from "./ProductsImages/Dahi.png"; 
