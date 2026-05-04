@@ -103,6 +103,16 @@ function Header() {
                 </Link>
               </li>
 
+             <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  style={isActive("/contact") ? activeStyle : normalStyle}
+                  to="/contact"
+                >
+                  Contact
+                </Link>
+              </li>  
+
               <li className="nav-item">
                 <button
                   className="btn btn-success ms-2"
