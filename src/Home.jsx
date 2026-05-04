@@ -14,8 +14,9 @@ function Home() {
     <BrandDiscription></BrandDiscription>
     <ProductsScroller></ProductsScroller>
     <BestSellingProductsHome></BestSellingProductsHome>
-    <Footer></Footer>
     <br />
+
+    <Footer></Footer>
   </div>
   );
 }
