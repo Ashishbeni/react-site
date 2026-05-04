@@ -56,7 +56,7 @@ function Header() {
               width="40"
               className="me-2"
             />
-            <strong className="text-primary">Muhara Gold</strong>
+            <strong className="text-primary">Murrah Gold</strong>
           </a>
 
           {/* Toggle */}

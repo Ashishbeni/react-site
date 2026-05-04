@@ -9,7 +9,7 @@ function PaneerDetails() {
   <>
     <div className={style.main}>
        <h2>🧀 Fresh Paneer</h2>
-       <p>Muhara Gold ka fresh paneer shudh doodh se hygienic process ke through tayyar kiya jata hai. Ye soft, fresh aur high-quality paneer hai jo daily use ke liye perfect hai. Isme koi preservative ya chemical nahi hota — sirf natural taste aur nutrition.</p>
+       <p>Murrah Gold ka fresh paneer shudh doodh se hygienic process ke through tayyar kiya jata hai. Ye soft, fresh aur high-quality paneer hai jo daily use ke liye perfect hai. Isme koi preservative ya chemical nahi hota — sirf natural taste aur nutrition.</p>
 
        <img src={Paneer} alt="Paneer"/><br /><br /><br /><br />
 
@@ -90,7 +90,7 @@ function PaneerDetails() {
        </div>
        </div><br /><br />
 
-      <Link class="btn btn-success" to="https://web.whatsapp.com/">Order Paneer Now</Link>
+      <Link class="btn btn-success" to="https://web.whatsapp.com/">Order via WhatsApp</Link>
     </div>
 
     <Footer></Footer>

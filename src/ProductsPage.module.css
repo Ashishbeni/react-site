@@ -62,6 +62,15 @@ span{
       font-size: 1.5rem;
 }
 
+#orderNow{
+  margin-left: 10vh;
+  width: 80%;
+}
+#orderNow:hover{
+  transform: scale(1.1);
+  box-shadow: 2px 5px 10px  rgba(0,0,0,0.85);
+}
+
 
 /* Tablet */
 @media (max-width: 1024px) {
@@ -145,5 +154,22 @@ span{
   .productDetails a {
     width: 100%;
     text-align: center;
+  }
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+  #orderNow {
+    width: 90%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  #orderNow {
+    width: 90%;
+    margin-left: 1.5vh;
+    margin-right: auto;
   }
 }

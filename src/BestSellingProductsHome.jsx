@@ -5,7 +5,7 @@ function BestSellingProductsHome(){
     <div className={style.main}>
       <div className={style.bestSellingProductsHome}>
       <h1>⭐ Best Selling Products</h1>
-      <p>Muhara Gold ke kuch sabse zyada pasand kiye jaane wale products, jo roz hazaron gharon tak fresh aur pure quality ke saath pahunchte hain:</p><br />
+      <p>Murrah Gold ke kuch sabse zyada pasand kiye jaane wale products, jo roz hazaron gharon tak fresh aur pure quality ke saath pahunchte hain:</p><br />
 
       <h2>🥛 Pure Bhains Milk</h2>
       <p>Hamara sabse popular product, jo roz subah fresh farm se collect karke direct aapke ghar tak deliver kiya jata hai. Isme koi mixing ya chemical nahi hota, sirf natural aur healthy milk.</p><br />
@@ -16,7 +16,7 @@ function BestSellingProductsHome(){
       <h2>🧀 Fresh Paneer</h2>
       <p>Soft, fresh aur high-quality paneer jo daily fresh milk se banaya jata hai. Cooking ke liye perfect aur protein se bharpoor.</p><br />
 
-      <h2>👉 Muhara Gold ka promise:</h2>
+      <h2>👉 Murrah Gold ka promise:</h2>
       <p>Har product me sirf freshness, purity aur trust milega — bina kisi compromise ke.</p>
 
       </div>

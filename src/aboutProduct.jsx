@@ -4,7 +4,7 @@ function AboutProduct() {
   return (
  <>
     <div className={style.ProductDescription}>
-        <p>MuharaGold ek trusted dairy brand hai jo aap tak fresh aur pure milk products pahunchane ke liye dedicated hai. Humara focus sirf products dena nahi, balki quality, hygiene aur trust ko har step par maintain karna hai, taki aapko mile bilkul safe aur natural dairy experience.
+        <p>MurrahGold ek trusted dairy brand hai jo aap tak fresh aur pure milk products pahunchane ke liye dedicated hai. Humara focus sirf products dena nahi, balki quality, hygiene aur trust ko har step par maintain karna hai, taki aapko mile bilkul safe aur natural dairy experience.
 
 Hum directly farms se milk collect karte hain aur usse carefully process karte hain, taki uski freshness aur nutrition bilkul maintain rahe. Har stage par proper care li jati hai, jisse aap tak sirf best quality hi pahunchti hai.
 

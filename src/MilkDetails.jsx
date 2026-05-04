@@ -9,7 +9,7 @@ function MilkDetailsPage() {
     <>
     <div className={style.main}>
        <h2>🥛 Fresh Cow & Buffalo Milk</h2>
-       <p>Muhara Gold ka shudh doodh (cow aur buffalo dono) directly farm se fresh collect karke hygienic process ke through aapke ghar tak pahunchaya jata hai. Aap apni preference ke hisaab se cow milk ya buffalo milk choose kar sakte hain. Isme koi milawat ya preservative nahi hota — sirf natural aur healthy milk.</p>
+       <p>Murrah Gold ka shudh doodh (cow aur buffalo dono) directly farm se fresh collect karke hygienic process ke through aapke ghar tak pahunchaya jata hai. Aap apni preference ke hisaab se cow milk ya buffalo milk choose kar sakte hain. Isme koi milawat ya preservative nahi hota — sirf natural aur healthy milk.</p>
 
        <img src={Milk} alt="Milk"/><br /><br /><br /><br />
 
@@ -89,7 +89,7 @@ function MilkDetailsPage() {
        </ul>
        </div>
        </div><br /><br />
-      <Link class="btn btn-success" to="https://web.whatsapp.com/">Order Now</Link>
+      <Link class="btn btn-success" to="https://web.whatsapp.com/">Order via WhatsApp</Link>
     </div>
 
       <Footer></Footer>

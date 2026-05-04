@@ -15,7 +15,7 @@ function BrandDescription() {
 
         {/* Heading */}
         <h1 className="fw-bold mb-3" style={{ color: "#54a45b" }}>
-          MuharaGold (India) Limited
+          MurrahGold (India) Limited
         </h1>
 
         {/* Subline */}
@@ -25,7 +25,7 @@ function BrandDescription() {
 
         {/* Main Content */}
         <p style={{ fontSize: "18px", lineHeight: "1.8", color: "#333" }}>
-          MuharaGold par hum simple si baat me believe karte hain — 
+          MurrahGold par hum simple si baat me believe karte hain — 
           <b> dairy bilkul waise hi mile jaisi honi chahiye: pure, fresh aur asli taste ke saath.</b>  
           Hamara <b>Milk, Ghee, Dahi aur Paneer</b> carefully select kiye gaye farms se aata hai, 
           jahan se lekar processing tak har step honestly aur safai ke saath kiya jata hai.
@@ -43,7 +43,7 @@ function BrandDescription() {
 
         {/* Tagline */}
         <h5 className="mt-4 fw-bold" style={{ color: "#c59d5f" }}>
-          Muhara Gold – Ghar jaisa asli swaad 🥛
+          Murrah Gold – Ghar jaisa asli swaad 🥛
         </h5>
 
       </div>

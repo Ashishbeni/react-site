@@ -7,7 +7,7 @@ function QualityAndPurity() {
     <div className={style.main}>
      <div className={style.heading}>
       <h1>Quality&Purity</h1>
-      <p>MuharaGold me quality koi option nahi —
+      <p>MurrahGold me quality koi option nahi —
 yeh hamari daily commitment hai.
 
 Hum ensure karte hain ki har product bilkul fresh aur natural ho. Milk directly trusted farms se liya jata hai, jahan animals ki proper care ki jati hai aur natural practices follow ki jati hain.

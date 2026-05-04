@@ -7,7 +7,7 @@ function AboutTeam() {
     <div className={style.main}>
      <div className={style.heading}>
       <h1>About Our Team</h1>
-      <p>MuharaGold me hamari team sirf logon ka group nahi hai —
+      <p>MurrahGold me hamari team sirf logon ka group nahi hai —
 yeh ek family hai jo purity, trust aur care me believe karti hai.
 
 Subah ke early milk collection se lekar aapke ghar tak fresh products deliver karne tak, har step hum poori dedication aur honesty ke saath handle karte hain. Har member ka ek hi focus hota hai — best quality dena, bina kisi compromise ke.

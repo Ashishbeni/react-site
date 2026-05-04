@@ -9,7 +9,7 @@ function DahiDetails() {
   <>
     <div className={style.main}>
        <h2>🥣 Fresh Dahi</h2>
-       <p>Muhara Gold ka fresh dahi shudh doodh se hygienic process ke through tayyar kiya jata hai. Ye natural fermentation se bana hota hai, jo taste me creamy aur health ke liye bahut faydemand hota hai. Isme koi preservative ya chemical nahi hota — sirf natural goodness.</p>
+       <p>Murrah Gold ka fresh dahi shudh doodh se hygienic process ke through tayyar kiya jata hai. Ye natural fermentation se bana hota hai, jo taste me creamy aur health ke liye bahut faydemand hota hai. Isme koi preservative ya chemical nahi hota — sirf natural goodness.</p>
 
        <img src={Dahi} alt="Dahi"/><br /><br /><br /><br />
 
@@ -90,7 +90,7 @@ function DahiDetails() {
        </div>
        </div><br /><br />
 
-      <Link class="btn btn-success" to="https://web.whatsapp.com/">Order Dahi Now</Link>
+      <Link class="btn btn-success" to="https://web.whatsapp.com/">Order via WhatsApp</Link>
     </div>
 
     <Footer></Footer>

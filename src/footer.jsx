@@ -8,7 +8,7 @@ function Footer() {
 
           {/* Brand */}
           <div className="col-md-4 mb-4">
-            <h4 className="fw-bold text-warning">MuharaGold</h4>
+            <h4 className="fw-bold text-warning">MurrahGold</h4>
             <p>
               Fresh aur pure dairy products ke liye trusted brand.  
               Hum aap tak quality, hygiene aur natural goodness lekar aate hain.
@@ -31,7 +31,7 @@ function Footer() {
             <h5 className="fw-semibold">Contact Us</h5>
             <p className="mb-1">📍 Hisar, Haryana</p>
             <p className="mb-1">📞 +91 7056523602</p>
-            <p className="mb-1">📧 support@muharagold.com</p>
+            <p className="mb-1">📧 support@murrahgold.com</p>
 
             {/* Social Media (Simple & Working) */}
             <div className="mt-3">

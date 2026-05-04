@@ -25,7 +25,7 @@ function Banner() {
         }}
       >
         <h1 style={{ fontSize: "3rem", color: "#66b3ff", fontWeight: "bold" }}>
-          Muhara Gold Dairy
+          Murrah Gold Dairy
         </h1>
         <p style={{ fontSize: "1.2rem" }}>
           Shudh bhains ka doodh, seedha farm se ghar tak

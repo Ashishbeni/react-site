@@ -9,7 +9,7 @@ function OurVision() {
       <h1>OurVision</h1>
       <p>Humara vision hai: “India ka sabse trusted dairy brand banna.”
 
-Hum sirf ek dairy company nahi banna chahte, balki har ghar ka ek trusted hissa banna chahte hain. Hamara aim hai ki jab bhi koi doodh, dahi, paneer ya ghee ke baare me soche, to sabse pehle MuharaGold ka naam yaad aaye.
+Hum sirf ek dairy company nahi banna chahte, balki har ghar ka ek trusted hissa banna chahte hain. Hamara aim hai ki jab bhi koi doodh, dahi, paneer ya ghee ke baare me soche, to sabse pehle MurrahGold ka naam yaad aaye.
 
 Aane wale samay me hum apni reach ko aur badhana chahte hain, naye areas me expand karna chahte hain aur zyada se zyada logon tak apne pure aur fresh products pahunchana chahte hain. Lekin growth ke saath-saath hum apni core values — quality, purity aur trust — ko kabhi compromise nahi karenge.
 

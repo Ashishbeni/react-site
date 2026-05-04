@@ -50,6 +50,8 @@ function ProductsPage(){
          <span>₹60 / KG</span>
          <Link class="btn btn-success" to="/dahiDetails">View Details</Link>
       </div><br />
+
+      <Link id={style.orderNow} class="btn btn-success" to="https://web.whatsapp.com/">Order via WhatsApp</Link>
     </div>
 
       <Footer></Footer>
