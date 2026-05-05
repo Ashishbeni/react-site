@@ -7,6 +7,7 @@ import GheeDetailsPage from "./GheeDetails";
 import PaneerDetails from "./PaneerDetails";
 import DahiDetails from "./DahiDetails";
 import Contact from "./Contact";
+import Cart from "./Cart";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/paneerDetails" element={<PaneerDetails/>}/>
         <Route path="/dahiDetails" element={<DahiDetails/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/cart" element={<Cart/>}/>
       </Routes>
     </div>
   );

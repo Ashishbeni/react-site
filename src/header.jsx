@@ -1,5 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import Logo from "./ProductsImages/Logo.png";
 
 function Header() {
   const location = useLocation();
@@ -49,15 +50,17 @@ function Header() {
         <div className="container">
 
           {/* Logo */}
-          <a className="navbar-brand d-flex align-items-center" href="#">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/1998/1998610.png"
+          <Link to="/">
+          <a className="navbar-brand d-flex align-items-center" href="#" >
+            <img style={{width:"50px", height:"60px"}}
+              src={Logo}
               alt="Buffalo Logo"
               width="40"
               className="me-2"
             />
-            <strong className="text-primary">Murrah Gold</strong>
+            <strong className="text-primary"></strong>
           </a>
+          </Link>
 
           {/* Toggle */}
           <button
@@ -79,7 +82,8 @@ function Header() {
                   style={isActive("/") ? activeStyle : normalStyle}
                   to="/"
                 >
-                  Home
+                  <i class="fa-solid fa-house"></i>
+                
                 </Link>
               </li>
 
@@ -89,7 +93,8 @@ function Header() {
                   style={isActive("/about") ? activeStyle : normalStyle}
                   to="/about"
                 >
-                  About
+                  <i class="fa-solid fa-circle-info"></i>
+
                 </Link>
               </li>
 
@@ -99,7 +104,8 @@ function Header() {
                   style={isActive("/products") ? activeStyle : normalStyle}
                   to="/products"
                 >
-                  Products
+                  <i class="fa-solid fa-bag-shopping"></i>
+                
                 </Link>
               </li>
 
@@ -109,9 +115,21 @@ function Header() {
                   style={isActive("/contact") ? activeStyle : normalStyle}
                   to="/contact"
                 >
-                  Contact
+                  <i class="fa-solid fa-address-book"></i>
+                  
                 </Link>
-              </li>  
+              </li> 
+
+             <li className="nav-item" >
+                <Link
+                  className="nav-link"
+                  style={isActive("/Cart") ? activeStyle : normalStyle}
+                  to="/Cart"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  
+                </Link>
+              </li>                 
 
               <li className="nav-item">
                 <button

@@ -21,7 +21,7 @@ function ProductsPage(){
          <span>Buffalo Milk ₹75 Liter</span><br />
           <span>Cow Milk ₹50 Liter</span>
          </div>
-         <Link class="btn btn-success" to="/milkDetails">View Details</Link>
+         <Link class="btn btn-info" to="/milkDetails">View Details</Link>
       </div><br />
 
       <div className={style.productDetails}>
@@ -32,7 +32,7 @@ function ProductsPage(){
          <span>Buffalo Ghee ₹1300 Liter</span><br />
           <span>Cow Ghee ₹1800 Liter</span>
          </div>
-         <Link class="btn btn-success" to="/gheeDetails">View Details</Link>  
+         <Link class="btn btn-info" to="/gheeDetails">View Details</Link>  
       </div><br />
 
       <div className={style.productDetails}>
@@ -40,7 +40,7 @@ function ProductsPage(){
          <h2>Paneer</h2>
          <p>Fresh farm Paneer delivered daily</p>
          <span>₹600 / KG</span>
-         <Link class="btn btn-success" to="/paneerDetails">View Details</Link>  
+         <Link class="btn btn-info" to="/paneerDetails">View Details</Link>  
       </div><br />
 
       <div className={style.productDetails}>
@@ -48,7 +48,7 @@ function ProductsPage(){
          <h2>Dahi</h2>
          <p>Fresh farm Dahi delivered daily</p>
          <span>₹60 / KG</span>
-         <Link class="btn btn-success" to="/dahiDetails">View Details</Link>
+         <Link class="btn btn-info" to="/dahiDetails">View Details</Link>
       </div><br />
 
       <Link id={style.orderNow} class="btn btn-success" to="https://web.whatsapp.com/">Order via WhatsApp</Link>

@@ -8,10 +8,10 @@ function Banner() {
     <div style={{ position: "relative" }}>
       
       {/* Full Image */}
-      <img
+      <img className={style.BannerImage}
         src={HomeCoverPhoto}
         alt="Child with cow"
-        style={{ width: "100%", height: "100vh", objectFit: "cover" }}
+        
      />
 
       {/* Overlay Content */}
