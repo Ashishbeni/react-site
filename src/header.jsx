@@ -82,7 +82,7 @@ function Header() {
                   style={isActive("/") ? activeStyle : normalStyle}
                   to="/"
                 >
-                  <i class="fa-solid fa-house"></i>
+                  <i class="fa-solid fa-house"></i> Home
                 
                 </Link>
               </li>
@@ -93,7 +93,7 @@ function Header() {
                   style={isActive("/about") ? activeStyle : normalStyle}
                   to="/about"
                 >
-                  <i class="fa-solid fa-circle-info"></i>
+                  <i class="fa-solid fa-circle-info"></i> About
 
                 </Link>
               </li>
@@ -104,7 +104,7 @@ function Header() {
                   style={isActive("/products") ? activeStyle : normalStyle}
                   to="/products"
                 >
-                  <i class="fa-solid fa-bag-shopping"></i>
+                  <i class="fa-solid fa-bag-shopping"></i> Products
                 
                 </Link>
               </li>
@@ -115,8 +115,8 @@ function Header() {
                   style={isActive("/contact") ? activeStyle : normalStyle}
                   to="/contact"
                 >
-                  <i class="fa-solid fa-address-book"></i>
-                  
+                  <i class="fa-solid fa-address-book"></i> Contact
+                   
                 </Link>
               </li> 
 
@@ -126,7 +126,8 @@ function Header() {
                   style={isActive("/Cart") ? activeStyle : normalStyle}
                   to="/Cart"
                 >
-                  <i class="fa-solid fa-cart-shopping"></i>
+                  <i class="fa-solid fa-cart-shopping"></i> Cart
+                  
                   
                 </Link>
               </li>                 

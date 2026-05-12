@@ -8,15 +8,17 @@ import Footer from "./footer";
 
 function Home() {
   return (
+    
  <div>
     <Banner></Banner>
-    <ProductsScroller></ProductsScroller>
+    {/* <ProductsScroller></ProductsScroller> */}
     <BrandDiscription></BrandDiscription>
     <BestSellingProductsHome></BestSellingProductsHome>
     <br />
 
     <Footer></Footer>
   </div>
+  
   );
 }
 

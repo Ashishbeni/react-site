@@ -1,7 +1,7 @@
 .main{
   margin: 0;
   width: 100%;
-  height: 130vh;
+  height: auto;
   padding-top: 5vh;
   padding-left: 2.5vh;
   background-color:white;
@@ -10,6 +10,7 @@
 .main h1{
       font-size:2.5rem;
       color: rgb(84, 164, 91);
+      margin-left: 10px;
       
 }
 #productTitle{
@@ -17,16 +18,27 @@
       color:#FFC107;
 }
 
-.productDetails{
-  width: 97%;
-  height: 22vh;
-  border-radius: 20px;
+
+.ProductContainer{
+  width: 99%;
+  height: auto;
+  padding-left: 2vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-  border: 0px solid black;
+  flex-wrap: wrap;
+  gap: 5px;
+  background-color:white;
 }
+.productDetails{
+  width: 19%;
+  height: 45vh;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.productDetails a{
+  margin-left: 18px;
+}
+
 .productDetails:hover{
     box-shadow: 0 10px 10px rgba(0,0,0,0.1);
     transform: translateY(-8px);
@@ -34,19 +46,21 @@
 }
 
 .productDetails img{
-  width: 40vh;
-  height: 20vh;
-  margin:10px ;
-  border-radius:40px 10px ;
+  width: 100%;
+  height: 25vh;
+  margin:0px ;
+  border-radius:20px 20px 0px 0px  ;
 }
-.productDetails img:hover{
-  transform: scale(0.95);
-  transition: transform 0.5s ease;
-}
+
 
 .productDetails a{
   margin-right: 17px;
 }
+
+.productDetails h5{
+  margin-right: 7px;
+}
+
 .productDetails a:hover{
   transform: scale(1.20);
 }
@@ -68,6 +82,7 @@ span{
 
 #orderNow{
   margin-left: 10vh;
+  margin-bottom: 2px;
   width: 90%;
 }
 #orderNow:hover{
@@ -76,104 +91,204 @@ span{
 }
 
 
-/* Tablet */
-@media (max-width: 1024px) {
-  .main {
-    height: auto;
-    padding: 20px;
-  }
+/* ================= TABLET ================= */
 
-  .main h1 {
-    font-size: 2rem;
-  }
+@media (max-width: 1024px){
 
-  #productTitle {
-    font-size: 1.3rem;
-  }
-
-  .productDetails {
-    height: auto;
-    padding: 15px;
-  }
-
-  .productDetails img {
-    width: 200px;
-    height: auto;
-  }
-
-  .main p {
-    font-size: 1.1rem;
-  }
-
-  span {
-    font-size: 1.3rem;
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .productDetails {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .productDetails img {
+  .main{
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    padding: 20px 10px;
   }
 
-  .productDetails a {
-    margin: 10px 0;
+  .main h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 0;
   }
 
-  .main p {
+  #productTitle{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .ProductContainer{
+    width: 100%;
+    padding-left: 0;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .productDetails{
+    width: 45%;          /* 🔥 2 cards per row */
+    height: auto;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .productDetails img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .productDetails h2{
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+
+  .productDetails p{
     font-size: 1rem;
+    padding: 0 10px;
   }
 
-  span {
+  span{
     font-size: 1.2rem;
   }
-}
 
-/* Small Mobile */
-@media (max-width: 480px) {
-  .main h1 {
-    font-size: 1.6rem;
+  .productDetails select,
+  .productDetails button,
+  .productDetails a{
+    width: 85%;
+    margin: 8px auto;
+    display: block;
   }
 
-  #productTitle {
+  #orderNow{
+    width: 95%;
+    margin: 20px auto;
+    display: block;
+  }
+
+}
+
+
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px){
+
+  .main{
+    width: 100%;
+    height: auto;
+    padding: 15px 10px;
+  }
+
+  .main h1{
+    font-size: 1.8rem;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  #productTitle{
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 10px;
+    line-height: 1.7;
+  }
+
+  .ProductContainer{
+    width: 100%;
+    padding-left: 0;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .productDetails{
+    width: 100%;          /* 🔥 full width cards */
+    height: auto;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  }
+
+  .productDetails img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .productDetails h2{
+    font-size: 1.4rem;
+    margin-top: 12px;
+  }
+
+  .productDetails p{
+    font-size: 0.95rem;
+    padding: 0 10px;
+    line-height: 1.7;
+  }
+
+  span{
     font-size: 1.1rem;
   }
 
-  .main p {
+  .productDetails h5{
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .productDetails select{
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .productDetails button{
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .productDetails a{
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+  }
+
+  #orderNow{
+    width: 95%;
+    margin: 20px auto;
+    display: block;
+  }
+
+}
+
+
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px){
+
+  .main h1{
+    font-size: 1.5rem;
+  }
+
+  #productTitle{
     font-size: 0.9rem;
   }
 
-  span {
-    font-size: 1.1rem;
+  .productDetails img{
+    height: 220px;
   }
 
-  .productDetails a {
-    width: 100%;
-    text-align: center;
+  .productDetails h2{
+    font-size: 1.2rem;
   }
-}
 
-
-/* Tablet */
-@media (max-width: 768px) {
-  #orderNow {
-    width: 90%;
+  .productDetails p{
+    font-size: 0.9rem;
   }
-}
 
-/* Mobile */
-@media (max-width: 480px) {
-  #orderNow {
-    width: 90%;
-    margin-left: 1.5vh;
-    margin-right: auto;
+  span{
+    font-size: 1rem;
   }
+
 }

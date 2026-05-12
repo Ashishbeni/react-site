@@ -11,47 +11,62 @@ function ProductsPage(){
     <div className={style.main}>
 
       <h1>Our Fresh Dairy Products</h1>
-      <p id={style.productTitle}>Shudh aur fresh dairy products, direct farm se aapke ghar tak</p>
 
+    <div className={style.ProductContainer}>
       <div className={style.productDetails}>
          <img src={Milk} alt="ProductImg" />
-         <h2>Milk</h2>
-         <p>Fresh farm milk delivered daily</p>
+         <h5>Buffalo Milk</h5>
          <div id={style.milkPrice}>
-         <span>Buffalo Milk ₹75 Liter</span><br />
-          <span>Cow Milk ₹50 Liter</span>
+         <span>₹80 Liter</span><br />
+         </div>
+         <Link class="btn btn-info" to="/milkDetails">View Details</Link>
+      </div><br />
+
+        <div className={style.productDetails}>
+         <img src={Milk} alt="ProductImg" />
+         <h5>Cow Milk</h5>
+         <div id={style.milkPrice}>
+         <span>₹50 Liter</span><br />
          </div>
          <Link class="btn btn-info" to="/milkDetails">View Details</Link>
       </div><br />
 
       <div className={style.productDetails}>
           <img src={Ghee} alt="ProductImg" />
-         <h2>Ghee</h2>
-         <p>Fresh farm Ghee delivered daily</p>
+         <h5>Buffalo Ghee</h5>
          <div id={style.milkPrice}>
-         <span>Buffalo Ghee ₹1300 Liter</span><br />
-          <span>Cow Ghee ₹1800 Liter</span>
+         <span>₹1400 Liter</span><br />
          </div>
          <Link class="btn btn-info" to="/gheeDetails">View Details</Link>  
       </div><br />
 
       <div className={style.productDetails}>
+          <img src={Ghee} alt="ProductImg" />
+         <h5>Cow Ghee</h5>
+         <div id={style.milkPrice}>
+         <span>₹1800 Liter</span><br />
+         </div>
+         <Link class="btn btn-info" to="/gheeDetails">View Details</Link>  
+      </div><br />      
+
+      <div className={style.productDetails}>
           <img src={Paneer} alt="ProductImg" />
-         <h2>Paneer</h2>
-         <p>Fresh farm Paneer delivered daily</p>
-         <span>₹600 / KG</span>
+         <h5>Paneer</h5>
+         <span>₹600 / KG</span><br />
          <Link class="btn btn-info" to="/paneerDetails">View Details</Link>  
       </div><br />
 
       <div className={style.productDetails}>
           <img src={Dahi} alt="ProductImg" />
-         <h2>Dahi</h2>
-         <p>Fresh farm Dahi delivered daily</p>
-         <span>₹60 / KG</span>
+         <h5>Dahi</h5>
+         <span>₹60 / KG</span><br />
          <Link class="btn btn-info" to="/dahiDetails">View Details</Link>
       </div><br />
 
       <Link id={style.orderNow} class="btn btn-success" to="https://web.whatsapp.com/">Order via WhatsApp</Link>
+
+      </div>
+
     </div>
 
       <Footer></Footer>

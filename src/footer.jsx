@@ -49,7 +49,7 @@ function Footer() {
 
         <div className="text-center">
           <p className="mb-0">
-            © {new Date().getFullYear()} MuharaGold. All Rights Reserved.
+            © {new Date().getFullYear()} MurrahGold. All Rights Reserved.
           </p>
         </div>
       </div>
