@@ -1,18 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import style from "./brandDiscription.module.css";
+import FreeDelivery from "./ProductsImages/FreeDelivery.png";
 
 function BrandDescription() {
-  return (
-    <div className="container my-5">
+  return (<>
+    <div className={style.mainContent}>
       
-      <div 
-        className="p-5 text-center"
-        style={{
-          background: "#fffaf5",
-          borderRadius: "20px",
-          boxShadow: "0 8px 30px rgba(0,0,0,0.1)"
-        }}
-      >
-
+      <div className={style.discriptionContainer}>
         {/* Heading */}
         <h1 className="fw-bold mb-3" style={{ color: "#54a45b" }}>
           MurrahGold (India) Limited
@@ -49,6 +43,9 @@ function BrandDescription() {
       </div>
 
     </div>
+
+     <img id={style.FreeDelivery} src={FreeDelivery} alt="Free Delivery" />
+    </>
   );
 }
 

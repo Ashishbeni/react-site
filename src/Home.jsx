@@ -10,9 +10,8 @@ function Home() {
   return (
  <div>
     <Banner></Banner>
-    <br />
-    <BrandDiscription></BrandDiscription>
     <ProductsScroller></ProductsScroller>
+    <BrandDiscription></BrandDiscription>
     <BestSellingProductsHome></BestSellingProductsHome>
     <br />
 
