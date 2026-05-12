@@ -1,0 +1,137 @@
+.cart{
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap:8px;
+}
+
+
+
+.cart img{
+  width: 40vh;
+  height: 25vh;
+  border-radius: 10px;
+  margin: 5px 2px 2px 3px;
+  
+}
+
+.cart h5{
+  padding-left: 5px;
+}
+
+.cart p{
+  padding-left: 5px;
+  color: green;
+  font-size: 20px;
+}
+
+#removeBtn{
+  margin-left: 2px;
+  margin-bottom: 2px;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px){
+
+  .cart{
+    gap: 12px;
+    padding: 12px;
+    justify-content: center;
+  }
+
+  .cart > div{
+    width: 45%;
+  }
+
+  .cart img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .cart h5{
+    font-size: 1.1rem;
+  }
+
+  .cart p{
+    font-size: 1rem;
+  }
+
+}
+
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px){
+
+  .cart{
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .cart > div{
+    width: 47%;
+  }
+
+  .cart img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .cart h5{
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .cart p{
+    font-size: 0.95rem;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  #removeBtn{
+    width: 90%;
+    margin-left: 5%;
+  }
+
+}
+
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px){
+
+  .cart{
+    gap: 12px;
+    padding: 8px;
+  }
+
+  .cart > div{
+    width: 100%;
+  }
+
+  .cart img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .cart h5{
+    font-size: 1rem;
+  }
+
+  .cart p{
+    font-size: 0.9rem;
+  }
+
+}
