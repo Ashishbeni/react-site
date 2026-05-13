@@ -5,6 +5,20 @@ import { Link } from "react-router-dom";
 import Dahi from"./ProductsImages/Dahi.png"
 
 function DahiDetails() {
+    const whatsappMessage = `
+    🥛 Murrah Gold Dairy Order
+
+    Product: Ghee
+
+    Please share:
+    - Quantity
+    - Delivery Address
+    - Preferred Delivery Time
+    `;  
+    const whatsappURL = `https://wa.me/917056523602?text=${encodeURIComponent(
+  whatsappMessage
+)}`; 
+
  return (
   <>
     <div className={style.main}>
@@ -90,7 +104,14 @@ function DahiDetails() {
        </div>
        </div><br /><br />
 
-      <Link class="btn btn-success" to="https://web.whatsapp.com/">Order via WhatsApp</Link>
+     <a
+       href={whatsappURL}
+       target="_blank"
+       rel="noreferrer"
+       className="btn btn-success"
+     >
+      Order on WhatsApp
+     </a>
     </div>
 
     <Footer></Footer>

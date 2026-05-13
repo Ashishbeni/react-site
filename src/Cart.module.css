@@ -18,18 +18,19 @@
 }
 
 .cart h5{
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
-.cart p{
-  padding-left: 5px;
-  color: green;
-  font-size: 20px;
-}
+
 
 #removeBtn{
-  margin-left: 2px;
+  margin-left: 9px;
   margin-bottom: 2px;
+}
+
+.value{
+  font-size: 20px;
+  color: green;
 }
 
 

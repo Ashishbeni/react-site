@@ -5,10 +5,24 @@ import { Link } from "react-router-dom";
 import Ghee from"./ProductsImages/Ghee.png";
 
 function GheeDetailsPage() {
+    const whatsappMessage = `
+    🥛 Murrah Gold Dairy Order
+
+    Product: Ghee
+
+    Please share:
+    - Quantity
+    - Delivery Address
+    - Preferred Delivery Time
+    `;  
+    const whatsappURL = `https://wa.me/917056523602?text=${encodeURIComponent(
+  whatsappMessage
+)}`;  
+
  return (
   <>
     <div className={style.main}>
-       <h2>🧈 Pure Desi Ghee</h2>
+       <h2>🧈 Pure Buffalo Desi Ghee</h2>
        <p>Murrah Gold ka shudh desi ghee traditional tareeke se tayyar kiya jata hai, jisme cow aur buffalo milk dono ka use hota hai. Ye ghee bilkul natural process se banaya jata hai bina kisi chemical ya preservative ke, jisse iska asli taste aur nutrition barkarar rehta hai.</p>
 
        <img src={Ghee} alt="Ghee"/><br /><br /><br /><br />
@@ -90,7 +104,14 @@ function GheeDetailsPage() {
        </div>
        </div><br /><br />
 
-      <Link class="btn btn-success" to="https://web.whatsapp.com/">Order via WhatsApp</Link>
+     <a
+       href={whatsappURL}
+       target="_blank"
+       rel="noreferrer"
+       className="btn btn-success"
+     >
+      Order on WhatsApp
+     </a>
     </div>
 
     <Footer></Footer>

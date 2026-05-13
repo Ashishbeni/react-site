@@ -1,13 +1,13 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import style from "./MilkDetails.module.css";
+import style from "./CowMilk.module.css";
 import Footer from "./footer";
 import Milk from "./ProductsImages/Milk.png"
 
-function MilkDetailsPage() {
+function CowMilk() {
   const whatsappMessage = `
 🥛 Murrah Gold Dairy Order
 
-Product: Buffalo Milk
+Product: Cow Milk
 
 Please share:
 - Quantity
@@ -21,7 +21,7 @@ const whatsappURL = `https://wa.me/917056523602?text=${encodeURIComponent(
   return (
     <>
     <div className={style.main}>
-       <h2>🥛 Fresh Cow & Buffalo Milk</h2>
+       <h2>🥛 Fresh Cow Milk</h2>
        <p>Murrah Gold ka shudh doodh (cow aur buffalo dono) directly farm se fresh collect karke hygienic process ke through aapke ghar tak pahunchaya jata hai. Aap apni preference ke hisaab se cow milk ya buffalo milk choose kar sakte hain. Isme koi milawat ya preservative nahi hota — sirf natural aur healthy milk.</p>
 
        <img src={Milk} alt="Milk"/><br /><br /><br /><br />
@@ -119,4 +119,4 @@ const whatsappURL = `https://wa.me/917056523602?text=${encodeURIComponent(
   );
 }
 
-export default MilkDetailsPage;
+export default CowMilk;
