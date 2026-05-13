@@ -1,15 +1,36 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { Collapse } from "bootstrap";
+
 import Logo from "./ProductsImages/Logo.png";
 
 function Header() {
+
   const location = useLocation();
   const navigate = useNavigate();
+
   const [search, setSearch] = useState("");
 
   const isActive = (path) => location.pathname === path;
 
+  /* ✅ Mobile navbar auto close */
+  const closeNavbar = () => {
+
+    const navbar = document.getElementById("navbarNav");
+
+    if (navbar.classList.contains("show")) {
+
+      const bsCollapse = new Collapse(navbar, {
+        toggle: false,
+      });
+
+      bsCollapse.hide();
+    }
+  };
+
+  /* ✅ Search */
   const handleSearch = (e) => {
+
     e.preventDefault();
 
     const value = search.trim().toLowerCase();
@@ -19,50 +40,55 @@ function Header() {
       return;
     }
 
-    // 📌 HOME
     if (value.includes("home")) {
       navigate("/");
       setSearch("");
+      closeNavbar();
       return;
     }
 
-    // 📌 ABOUT
     if (value.includes("about")) {
       navigate("/about");
       setSearch("");
+      closeNavbar();
       return;
     }
 
-    // 📌 PRODUCTS
-    if (value.includes("product") || value.includes("milk") || value.includes("ghee")) {
+    if (
+      value.includes("product") ||
+      value.includes("milk") ||
+      value.includes("ghee")
+    ) {
       navigate("/products?search=" + value);
       setSearch("");
+      closeNavbar();
       return;
     }
 
-    // ❌ INVALID
     alert("❌ No result found");
   };
 
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+
         <div className="container">
 
-          {/* Logo */}
-          <Link to="/">
-          <a className="navbar-brand d-flex align-items-center" href="#" >
-            <img style={{width:"50px", height:"60px"}}
+          {/* ✅ Logo */}
+          <Link
+            to="/"
+            className="navbar-brand d-flex align-items-center"
+            onClick={closeNavbar}
+          >
+            <img
+              style={{ width: "50px", height: "60px" }}
               src={Logo}
               alt="Buffalo Logo"
-              width="40"
               className="me-2"
             />
-            <strong className="text-primary"></strong>
-          </a>
           </Link>
 
-          {/* Toggle */}
+          {/* ✅ Toggle Button */}
           <button
             className="navbar-toggler"
             type="button"
@@ -72,71 +98,78 @@ function Header() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          {/* Links */}
+          {/* ✅ Navbar Links */}
           <div className="collapse navbar-collapse" id="navbarNav">
+
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
+              {/* Home */}
               <li className="nav-item">
                 <Link
                   className="nav-link"
                   style={isActive("/") ? activeStyle : normalStyle}
                   to="/"
+                  onClick={closeNavbar}
                 >
-                  <i class="fa-solid fa-house"></i> Home
-                
+                  <i className="fa-solid fa-house"></i> Home
                 </Link>
               </li>
 
+              {/* About */}
               <li className="nav-item">
                 <Link
                   className="nav-link"
                   style={isActive("/about") ? activeStyle : normalStyle}
                   to="/about"
+                  onClick={closeNavbar}
                 >
-                  <i class="fa-solid fa-circle-info"></i> About
-
+                  <i className="fa-solid fa-circle-info"></i> About
                 </Link>
               </li>
 
+              {/* Products */}
               <li className="nav-item">
                 <Link
                   className="nav-link"
                   style={isActive("/products") ? activeStyle : normalStyle}
                   to="/products"
+                  onClick={closeNavbar}
                 >
-                  <i class="fa-solid fa-bag-shopping"></i> Products
-                
+                  <i className="fa-solid fa-bag-shopping"></i> Products
                 </Link>
               </li>
 
-             <li className="nav-item">
+              {/* Contact */}
+              <li className="nav-item">
                 <Link
                   className="nav-link"
                   style={isActive("/contact") ? activeStyle : normalStyle}
                   to="/contact"
+                  onClick={closeNavbar}
                 >
-                  <i class="fa-solid fa-address-book"></i> Contact
-                   
+                  <i className="fa-solid fa-address-book"></i> Contact
                 </Link>
-              </li> 
+              </li>
 
-             <li className="nav-item" >
+              {/* Cart */}
+              <li className="nav-item">
                 <Link
                   className="nav-link"
-                  style={isActive("/Cart") ? activeStyle : normalStyle}
-                  to="/Cart"
+                  style={isActive("/cart") ? activeStyle : normalStyle}
+                  to="/cart"
+                  onClick={closeNavbar}
                 >
-                  <i class="fa-solid fa-cart-shopping"></i> Cart
-                  
-                  
+                  <i className="fa-solid fa-cart-shopping"></i> Cart
                 </Link>
-              </li>                 
+              </li>
 
+              {/* Support Button */}
               <li className="nav-item">
                 <button
                   className="btn btn-success ms-2"
                   data-bs-toggle="modal"
                   data-bs-target="#supportModal"
+                  onClick={closeNavbar}
                 >
                   Support
                 </button>
@@ -144,8 +177,9 @@ function Header() {
 
             </ul>
 
-            {/* Search */}
+            {/* ✅ Search */}
             <form className="d-flex" onSubmit={handleSearch}>
+
               <input
                 className="form-control me-2"
                 type="search"
@@ -153,46 +187,86 @@ function Header() {
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />
-              <button className="btn btn-outline-success" type="submit">
+
+              <button
+                className="btn btn-outline-success"
+                type="submit"
+              >
                 Search
               </button>
+
             </form>
 
           </div>
         </div>
       </nav>
 
-      {/* Support Modal */}
+      {/* ✅ Support Modal */}
       <div className="modal fade" id="supportModal" tabIndex="-1">
+
         <div className="modal-dialog">
+
           <div className="modal-content">
 
             <div className="modal-header">
-              <h5 className="modal-title">Support Form</h5>
-              <button className="btn-close" data-bs-dismiss="modal"></button>
+
+              <h5 className="modal-title">
+                Support Form
+              </h5>
+
+              <button
+                className="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+
             </div>
 
             <div className="modal-body">
+
               <form>
+
                 <div className="mb-3">
-                  <label className="form-label">Name</label>
-                  <input type="text" className="form-control" />
+                  <label className="form-label">
+                    Name
+                  </label>
+
+                  <input
+                    type="text"
+                    className="form-control"
+                  />
                 </div>
 
                 <div className="mb-3">
-                  <label className="form-label">Email</label>
-                  <input type="email" className="form-control" />
+                  <label className="form-label">
+                    Email
+                  </label>
+
+                  <input
+                    type="email"
+                    className="form-control"
+                  />
                 </div>
 
                 <div className="mb-3">
-                  <label className="form-label">Message</label>
-                  <textarea className="form-control" rows="3"></textarea>
+                  <label className="form-label">
+                    Message
+                  </label>
+
+                  <textarea
+                    className="form-control"
+                    rows="3"
+                  ></textarea>
                 </div>
 
-                <button type="submit" className="btn btn-success w-100">
+                <button
+                  type="submit"
+                  className="btn btn-success w-100"
+                >
                   Submit
                 </button>
+
               </form>
+
             </div>
 
           </div>
@@ -202,13 +276,14 @@ function Header() {
   );
 }
 
-/* Styles */
+/* ✅ Active Link Style */
 const activeStyle = {
   color: "#54a45b",
   fontWeight: "bold",
   borderBottom: "2px solid #54a45b"
 };
 
+/* ✅ Normal Link Style */
 const normalStyle = {
   color: "#000"
 };
