@@ -82,7 +82,7 @@ function ProductsScroller() {
     width: 150px !important;
     left: 290px !important;
     transform: translateX(-50%);
-    bottom: 50px !important;
+    bottom: 45px !important;
     padding: 0px 0px !important;
     font-size: 12px !important;
   }
