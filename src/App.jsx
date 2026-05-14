@@ -20,7 +20,7 @@ function App() {
          if(alreadyExistItems){
          const updatedCart = cartItems.map((item) =>
          item.name === Product.name
-         ? { ...item, quantity: item.quantity + 1 }
+         ? { ...item, quantity: item.quantity + Product.quantity }
          : item
                );
          setCartItems(updatedCart);

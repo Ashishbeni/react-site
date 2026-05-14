@@ -1,7 +1,7 @@
 import Footer from "./footer";
 import style from "./ProductsPage.module.css";
 import { Link } from "react-router-dom";
-
+import { useState } from "react";
 import Milk from "./ProductsImages/Milk.png";
 import Ghee from "./ProductsImages/Ghee.png";
 import Paneer from "./ProductsImages/Paneer.png";
@@ -23,6 +23,17 @@ function ProductsPage({ AddToCart, cartItems = [] }) {
     const whatsappURL = `https://wa.me/917056523602?text=${encodeURIComponent(
   whatsappMessage
 )}`; 
+
+const [orderQuantity, setOrderQuantity] = useState(
+  {
+  buffaloMilk: "1 Liter",
+  cowMilk: "1 Liter",
+  buffaloGhee: "1 KG",
+  cowGhee: "1 KG",
+  paneer: "1 KG",
+  dahi: "1 KG"
+  }
+);
 
   const buffaloMilkItem = cartItems.find(
     (item) => item.name === "Buffalo Milk"
@@ -66,6 +77,19 @@ function ProductsPage({ AddToCart, cartItems = [] }) {
               <span>₹80 Liter</span><br />
             </div>
 
+            <select class="btn btn-secondary" name="Buffalo Milk" 
+            value={orderQuantity.buffaloMilk}
+             onChange={(e)=>setOrderQuantity({...orderQuantity, buffaloMilk: e.target.value})} 
+            >
+              <option value="1 Liter">1 Liter</option>
+              <option value="2 Liter">2 Liter</option>
+              <option value="5 Liter">5 Liter</option>
+              <option value="8 Liter">8 Liter</option>
+              <option value="10 Liter">10 Liter</option>
+              <option value="15 Liter">15 Liter</option>
+              <option value="20 Liter">20 Liter</option>
+            </select>
+
             <button
               className="btn btn-success"
               onClick={() =>
@@ -73,7 +97,7 @@ function ProductsPage({ AddToCart, cartItems = [] }) {
                   name: "Buffalo Milk",
                   price: 80,
                   image: Milk,
-                  quantity: 1
+                  quantity: parseInt(orderQuantity.buffaloMilk)
                 })
               }
             >
@@ -97,6 +121,19 @@ function ProductsPage({ AddToCart, cartItems = [] }) {
               <span>₹50 Liter</span><br />
             </div>
 
+            <select class="btn btn-secondary" name="select" 
+            value={orderQuantity.cowMilk}
+             onChange={(e)=>setOrderQuantity({...orderQuantity, cowMilk: e.target.value})} 
+            >
+              <option value="1 Liter">1 Liter</option>
+              <option value="2 Liter">2 Liter</option>
+              <option value="5 Liter">5 Liter</option>
+              <option value="8 Liter">8 Liter</option>
+              <option value="10 Liter">10 Liter</option>
+              <option value="15 Liter">15 Liter</option>
+              <option value="20 Liter">20 Liter</option>
+            </select>            
+
             <button
               className="btn btn-success"
               onClick={() =>
@@ -104,7 +141,7 @@ function ProductsPage({ AddToCart, cartItems = [] }) {
                   name: "Cow Milk",
                   price: 50,
                   image: Milk,
-                  quantity: 1
+                  quantity: parseInt(orderQuantity.cowMilk)
                 })
               }
             >
@@ -128,6 +165,19 @@ function ProductsPage({ AddToCart, cartItems = [] }) {
               <span>₹1400 Liter</span><br />
             </div>
 
+            <select class="btn btn-secondary" name="select" 
+            value={orderQuantity.buffaloGhee}
+             onChange={(e)=>setOrderQuantity({...orderQuantity, buffaloGhee: e.target.value})} 
+            >
+              <option value="1 KG">1 KG</option>
+              <option value="2 KG">2 KG</option>
+              <option value="5 KG">5 KG</option>
+              <option value="8 KG">8 KG</option>
+              <option value="10 KG">10 KG</option>
+              <option value="15 KG">15 KG</option>
+              <option value="20 KG">20 KG</option>
+            </select>            
+
             <button
               className="btn btn-success"
               onClick={() =>
@@ -135,7 +185,7 @@ function ProductsPage({ AddToCart, cartItems = [] }) {
                   name: "Buffalo Ghee",
                   price: 1400,
                   image: Ghee,
-                  quantity: 1
+                  quantity: parseInt(orderQuantity.buffaloGhee)
                 })
               }
             >
@@ -148,7 +198,6 @@ function ProductsPage({ AddToCart, cartItems = [] }) {
           </div>
 
 
-
           {/* Cow Ghee */}
           <div className={style.productDetails}>
             <img src={Ghee} alt="ProductImg" />
@@ -159,6 +208,19 @@ function ProductsPage({ AddToCart, cartItems = [] }) {
               <span>₹1800 Liter</span><br />
             </div>
 
+            <select class="btn btn-secondary" name="select" 
+            value={orderQuantity.cowGhee}
+             onChange={(e)=>setOrderQuantity({...orderQuantity, cowGhee: e.target.value})} 
+            >
+              <option value="1 KG">1 KG</option>
+              <option value="2 KG">2 KG</option>
+              <option value="5 KG">5 KG</option>
+              <option value="8 KG">8 KG</option>
+              <option value="10 KG">10 KG</option>
+              <option value="15 KG">15 KG</option>
+              <option value="20 KG">20 KG</option>
+            </select>            
+
             <button
               className="btn btn-success"
               onClick={() =>
@@ -166,7 +228,7 @@ function ProductsPage({ AddToCart, cartItems = [] }) {
                   name: "Cow Ghee",
                   price: 1800,
                   image: Ghee,
-                  quantity: 1
+                  quantity: parseInt(orderQuantity.cowGhee)
                 })
               }
             >
@@ -188,6 +250,19 @@ function ProductsPage({ AddToCart, cartItems = [] }) {
 
             <span>₹600 / KG</span><br />
 
+            <select class="btn btn-secondary" name="select" 
+            value={orderQuantity.paneer}
+             onChange={(e)=>setOrderQuantity({...orderQuantity, paneer: e.target.value})} 
+            >
+              <option value="1 KG">1 KG</option>
+              <option value="2 KG">2 KG</option>
+              <option value="5 KG">5 KG</option>
+              <option value="8 KG">8 KG</option>
+              <option value="10 KG">10 KG</option>
+              <option value="15 KG">15 KG</option>
+              <option value="20 KG">20 KG</option>
+            </select>
+
             <button
               className="btn btn-success"
               onClick={() =>
@@ -195,7 +270,7 @@ function ProductsPage({ AddToCart, cartItems = [] }) {
                   name: "Paneer",
                   price: 600,
                   image: Paneer,
-                  quantity: 1
+                  quantity: parseInt(orderQuantity.paneer)
                 })
               }
             >
@@ -217,6 +292,19 @@ function ProductsPage({ AddToCart, cartItems = [] }) {
 
             <span>₹60 / KG</span><br />
 
+            <select class="btn btn-secondary" name="select" 
+            value={orderQuantity.dahi}
+             onChange={(e)=>setOrderQuantity({...orderQuantity, dahi: e.target.value})} 
+            >
+              <option value="1 KG">1 KG</option>
+              <option value="2 KG">2 KG</option>
+              <option value="5 KG">5 KG</option>
+              <option value="8 KG">8 KG</option>
+              <option value="10 KG">10 KG</option>
+              <option value="15 KG">15 KG</option>
+              <option value="20 KG">20 KG</option>
+            </select>
+
             <button
               className="btn btn-success"
               onClick={() =>
@@ -224,7 +312,7 @@ function ProductsPage({ AddToCart, cartItems = [] }) {
                   name: "Dahi",
                   price: 60,
                   image: Dahi,
-                  quantity: 1
+                  quantity: parseInt(orderQuantity.dahi)
                 })
               }
             >
