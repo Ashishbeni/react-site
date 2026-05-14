@@ -30,8 +30,12 @@ function Footer() {
           <div className="col-md-4 mb-4">
             <h5 className="fw-semibold">Contact Us</h5>
             <p className="mb-1">📍 Hisar, Haryana</p>
-            <p className="mb-1">📞 +91 7056523602</p>
-            <p className="mb-1">📧 support@murrahgold.com</p>
+            <a style={{ color: "white", textDecoration: "none" }} href="tel:+917056523602">
+              <p className="mb-1">📞 +91 7056523602</p>
+            </a>
+            <a style={{color: "white", textDecoration: "none"}} href="mailto:murrahgold@gmail.com?Subject=Inquiry">
+              <p className="mb-1">📧 murrahgold@gmail.com</p>
+            </a>
 
             {/* Social Media (Simple & Working) */}
             <div className="mt-3">

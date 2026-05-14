@@ -9,20 +9,20 @@ import Dahi from "./ProductsImages/Dahi.png";
 
 function ProductsPage({ AddToCart, cartItems = [] }) {
 
-      const whatsappMessage = `
-    🥛 Murrah Gold Dairy Order
+//       const whatsappMessage = `
+//     🥛 Murrah Gold Dairy Order
 
-    Product: Add your order details here.
+//     Product: Add your order details here.
 
-    Please share:
-    - Product Name
-    - Quantity
-    - Delivery Address
-    - Preferred Delivery Time
-    `;  
-    const whatsappURL = `https://wa.me/917056523602?text=${encodeURIComponent(
-  whatsappMessage
-)}`; 
+//     Please share:
+//     - Product Name
+//     - Quantity
+//     - Delivery Address
+//     - Preferred Delivery Time
+//     `;  
+//     const whatsappURL = `https://wa.me/917056523602?text=${encodeURIComponent(
+//   whatsappMessage
+// )}`; 
 
 const [orderQuantity, setOrderQuantity] = useState(
   {
@@ -326,7 +326,7 @@ const [orderQuantity, setOrderQuantity] = useState(
 
 
 
-<a
+{/* <a
   id={style.orderNow}
   className="btn btn-success"
   href={whatsappURL}
@@ -334,10 +334,10 @@ const [orderQuantity, setOrderQuantity] = useState(
   rel="noreferrer"
 >
   Order via WhatsApp
-</a>
+</a> */}
 
         </div>
-      </div>
+      </div><br />
 
       <Footer />
     </>

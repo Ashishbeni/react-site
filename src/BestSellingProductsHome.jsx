@@ -26,7 +26,7 @@ function BestSellingProductsHome(){
       <img src={ghee} alt="Ghee" />
       </div><br />
 
-      <h2>🧀 Fresh Paneer</h2>
+      {/* <h2>🧀 Fresh Paneer</h2>
       <div className={style.productDetailsWithImage}>
       <img id={style.image3} src={paneer} alt="Paneer" />
       <p>Soft, fresh aur high-quality paneer jo daily fresh milk se banaya jata hai. Cooking ke liye perfect aur protein se bharpoor.</p>
@@ -36,10 +36,10 @@ function BestSellingProductsHome(){
       <div className={style.productDetailsWithImage}>
       <p>Prepared from pure cow and Murrah buffalo milk, MurrahGold Dahi is naturally thick, creamy, and rich in nutrition. Packed with calcium, protein, and natural probiotics, it supports healthy digestion and strengthens immunity while delivering the authentic farm-fresh taste your family loves every day.</p>
       <img src={dahi} alt="Dahi" />
-      </div>
+      </div> */}
 
-      <h2>👉 Murrah Gold ka promise:</h2>
-      <h5>Har product me sirf freshness, purity aur trust milega — bina kisi compromise ke.</h5>
+      {/* <h2>👉 Murrah Gold ka promise:</h2>
+      <h5>Har product me sirf freshness, purity aur trust milega — bina kisi compromise ke.</h5> */}
 
       </div>
     </div>

@@ -32,7 +32,7 @@ function Cart({ cartItems, RemoveFromCart }) {
     
 *Customer Details:*
 👤 Name: ${userDetails.name}
-📞 Phone: ${userDetails.phone}
+// 📞 Phone: ${userDetails.phone}
 📍 Address: ${userDetails.address}
 🏠 Landmark: ${userDetails.landmark}
 
@@ -79,12 +79,12 @@ ${whatsappMessage}
               className="form-control mb-2"
               onChange={(e) => setUserDetails({...userDetails, name: e.target.value})}
             />
-            <input 
+            {/* <input 
               type="text" 
               placeholder="Phone Number" 
               className="form-control mb-2"
               onChange={(e) => setUserDetails({...userDetails, phone: e.target.value})}
-            />
+            /> */}
             <textarea 
               placeholder="Full Delivery Address" 
               className="form-control mb-2"

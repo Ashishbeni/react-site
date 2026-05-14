@@ -10,17 +10,23 @@ function Contact(){
            <h1>Contct Us</h1>
            <p>For any inquiries or partnership opportunities, feel free to reach out to MurrahGold International. We’re here to assist you with premium quality products and reliable support.</p>
       </div>
+
       <div className={style.elementsDiv}>
         <div className={style.element}>
-          <h1><i  class="fa-solid fa-mobile-screen"></i></h1>
+          <a href="tel:+917056523602"><h1><i  class="fa-solid fa-mobile-screen"></i></h1>
           <h3>Phone:</h3>
           <h5>+91 7056523602</h5>
+          </a>
         </div>
+
         <div className={style.element}>
+          <a href="mailto:murrahgold@gmail.com?Subject=Inquiry">
           <h1>  <i class="fa-solid fa-envelope"></i></h1>
           <h3>Email:</h3>
-          <h5>info@murrahgold.com</h5>           
+          <h5>murrahgold@gmail.com</h5>      
+          </a>     
         </div>
+
         <div className={style.element}>
           <h1>  <i class="fa-solid fa-location-dot"></i></h1>
           <h3>Address:</h3>

@@ -10,9 +10,9 @@ function Home() {
   return (
     
  <div>
-    <Banner></Banner>
-    {/* <ProductsScroller></ProductsScroller> */}
-    <BrandDiscription></BrandDiscription>
+    {/* <Banner></Banner> */}
+    <ProductsScroller></ProductsScroller>
+    <BrandDiscription></BrandDiscription><br /><br />
     <BestSellingProductsHome></BestSellingProductsHome>
     <br />
 

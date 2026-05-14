@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import style from "./brandDiscription.module.css";
 import FreeDelivery from "./ProductsImages/FreeDelivery.png";
+import { Link } from "react-router-dom";
 
 function BrandDescription() {
   return (<>
@@ -23,28 +24,30 @@ function BrandDescription() {
           <b> dairy bilkul waise hi mile jaisi honi chahiye: pure, fresh aur asli taste ke saath.</b>  
           Hamara <b>Milk, Ghee, Dahi aur Paneer</b> carefully select kiye gaye farms se aata hai, 
           jahan se lekar processing tak har step honestly aur safai ke saath kiya jata hai.
-          <br /><br />
-
+          <br />
           Hum jaante hain ki yeh sirf products nahi hain — yeh aapki daily life ka hissa hain.  
           Subah ki chai ho, ghar ka khana ho ya koi special dish — sabka taste tabhi best aata hai 
           jab quality sahi ho. Isi liye hum hamesha 
           <b> freshness, hygiene aur consistency</b> par focus karte hain.
-          <br /><br />
-
+          <br />
           Koi shortcut nahi, koi compromise nahi — bas har roz wahi dairy products 
           jinke saath aap bina soche bharosa kar sakein.
         </p>
 
+        <Link to="/about" className="btn btn-danger">
+          Read More
+        </Link>
+
         {/* Tagline */}
-        <h5 className="mt-4 fw-bold" style={{ color: "#c59d5f" }}>
+        {/* <h5 className="mt-4 fw-bold" style={{ color: "#c59d5f" }}>
           Murrah Gold – Ghar jaisa asli swaad 🥛
-        </h5>
+        </h5> */}
 
       </div>
 
     </div>
 
-     <img id={style.FreeDelivery} src={FreeDelivery} alt="Free Delivery" />
+     {/* <img id={style.FreeDelivery} src={FreeDelivery} alt="Free Delivery" /> */}
     </>
   );
 }
