@@ -38,8 +38,8 @@ function BestSellingProductsHome(){
       <img src={dahi} alt="Dahi" />
       </div> */}
 
-      <h2>👉 Murrah Gold ka promise:</h2>
-      <h5>Har product me sirf freshness, purity aur trust milega — bina kisi compromise ke.</h5>
+      {/* <h2>👉 Murrah Gold ka promise:</h2>
+      <h5>Har product me sirf freshness, purity aur trust milega — bina kisi compromise ke.</h5> */}
 
       </div>
     </div>

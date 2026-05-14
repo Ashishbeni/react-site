@@ -80,7 +80,7 @@ function ProductsScroller() {
 
   .carousel-item .btn {
     width: 150px !important;
-    left: 255px !important;
+    left: 320px !important;
     transform: translateX(-50%);
     bottom: 50px !important;
     padding: 0px 0px !important;
